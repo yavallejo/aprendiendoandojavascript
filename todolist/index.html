@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <main class="localStorage__box">
+            <div class="localStorage__boxFirst">
+                <header class="localStorage__header">
+                    <h1>Aprendiendo localStorage</h1>
+                </header>
+                <form class="localStorage__form" id="formulario">
+                    <textarea
+                        name="message"
+                        cols="30"
+                        rows="5"
+                        class="textarea valueTask"
+                        placeholder="Inserte su tarea aquí"
+                        id="valueTask"
+                    ></textarea>
+                    <input
+                        type="submit"
+                        class="btn btn-primary mt-5 addTask"
+                        value="Enviar"
+                    />
+                </form>
+            </div>
+            <div class="localStorage__boxResult">
+                <h2>Tus tareas del día</h2>
+                <ul
+                    class="list-none mt-5"
+                    id="localStorage__boxResult--tweets"
+                ></ul>
+            </div>
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
